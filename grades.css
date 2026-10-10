@@ -1,0 +1,180 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    background-color: #243b55;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #4ea8de;
+}
+
+/* Grades */
+
+.grades {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.grades h2 {
+    margin-bottom: 25px;
+    color: #243b55;
+}
+
+.grades table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 2px 8px #d5dfe6;
+}
+
+.grades caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #243b55;
+}
+
+.grades th {
+    background-color: #243b55;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #b8d8ea;
+}
+
+.grades td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #b8d8ea;
+}
+
+/* Alternate Rows */
+
+.grades tbody tr:nth-child(even) {
+    background-color: #eaf5fb;
+}
+
+/* Hover */
+
+.grades tbody tr:hover {
+    background-color: #d2ecf9;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #243b55;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .grades {
+        padding: 30px 10px;
+        overflow-x: auto;
+    }
+
+    .grades h2 {
+        font-size: 30px;
+    }
+
+    .grades caption {
+        font-size: 18px;
+    }
+
+    .grades table {
+        min-width: 500px;
+    }
+
+    .grades th,
+    .grades td {
+        padding: 10px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+}
+

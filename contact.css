@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    background-color: #243b55;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #4ea8de;
+}
+
+/* Contact */
+
+.contact {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: #243b55;
+}
+
+.contact > p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.contact h3 {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #243b55;
+}
+
+.contact a {
+    color: #4ea8de;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #243b55;
+    text-decoration: underline;
+}
+
+.contact p {
+    line-height: 1.6;
+}
+
+/* Horizontal Line */
+
+.contact hr {
+    margin: 25px 0;
+    border: 0;
+    border-top: 1px solid #b8d8ea;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #243b55;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .contact > p {
+        font-size: 16px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+}

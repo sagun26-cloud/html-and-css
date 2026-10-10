@@ -1,0 +1,168 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    background-color: #243b55;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #4ea8de;
+}
+
+/* Courses */
+
+.courses {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.courses h2 {
+    margin-bottom: 30px;
+    color: #243b55;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.course-card {
+    flex-basis: 250px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #b8d8ea;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #d5dfe6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card h3 {
+    margin-top: 0;
+    color: #243b55;
+}
+
+.course-card p {
+    flex-grow: 1;
+}
+
+.course-card a {
+    color: #4ea8de;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-card a:hover {
+    color: #243b55;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #243b55;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .courses {
+        padding: 30px 15px;
+    }
+
+    .courses h2 {
+        font-size: 30px;
+    }
+
+    .course-card {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+}
